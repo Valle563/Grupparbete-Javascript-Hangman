@@ -29,7 +29,7 @@ Om man kör fast med ett problem förväntar vi oss att man frågar de andra i g
 
 
 Uppdelning av arbetet:
-Vi ska göra så att ...
+Vi delar upp det så att Valentino jobbar i draw-hangman.js och Henrik jobbar i show-guessed-letters.js och antonina jobbar i word-magagement.js och game-over.js och score.screen.Html kör vi tillsammans och css kör man till den som man jobbar i med js filen. js jobbar vi med tillsammans. Behöver man hjälper så kan vi sitta till sammans. 
 
 Code reviews
 Code review den 2025-11-12: vi granskade gruppen namn här kod och gav följande feedback
