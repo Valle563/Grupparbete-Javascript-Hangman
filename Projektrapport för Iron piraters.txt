@@ -1,4 +1,9 @@
-Diskussionsfrågor för överenskommelse
+Projektrapport för Iron piraters
+
+Vi är: Iron pirates
+Överenskommelse:
+
+Diskussionsfrågor för överenskommelse Iron pirates
 Vilka dagar ska vi ses?
 vi ska träffas måndag till fredag och vara lediga på lördag och söndagar.
 Mellan vilka tider jobbar vi?
@@ -20,3 +25,36 @@ Vilka kommunikationskanaler? | Vad förväntas av varje gruppmedlem?
 Vi använder Discord för all kommunikation. Mellan 9-15 på dagar som vi arbetar ska man svara på direktmeddelanden och meddelanden i gruppens chat-kanal. Utanför arbetstid förväntas man svara tidigt nästa arbetsdag.
 
 Om man kör fast med ett problem förväntar vi oss att man frågar de andra i gruppen/AI. Vi hjälper varandra och parprogrammerar för att lösa problem snabbare och bättre.
+
+
+
+Uppdelning av arbetet:
+Vi ska göra så att ...
+
+Code reviews
+Code review den 2025-11-12: vi granskade gruppen namn här kod och gav följande feedback
+något som var bra i koden
+något som var bra i koden
+förslag på något som kan förbättras
+
+Code review den 2025-11-13: gruppen namn här granskade vår kod och gav oss följande feedback
+något som var bra i koden
+något som var bra i koden
+förslag på något som kan förbättras
+Användartester
+Den 2025-11-14 fick Namn här provspela vår app och gav oss följande feedback:
+något som var bra med upplevelsen
+något som var bra med upplevelsen
+förslag på något som kan förbättras
+
+Den 2025-11-15 fick Namn här provspela vår app och gav oss följande feedback:
+något som var bra med upplevelsen
+något som var bra med upplevelsen
+förslag på något som kan förbättras
+
+Den 2025-11-16 fick Namn här provspela vår app och gav oss följande feedback:
+något som var bra med upplevelsen
+något som var bra med upplevelsen
+förslag på något som kan förbättras
+
+
