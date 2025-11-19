@@ -1,0 +1,24 @@
+Loggbok för Valentino Finocchiaro (Iron pirates)
+
+
+Logg
+
+Detta har jag jobbat med varje dag:
+
+18/11 - uppstart med gruppen. Vi började med en designskiss. Jag ritade en skiss på papper och började med mobil storlek (350px), sedan gjorde jag en för dator variant(större skärmar). Vi gick igenom diskussionsfrågorna för våran grupp, jag skrev den i anteckningar och delade den i våran grupp så alla medlemmar kan få tag i den.
+
+Jag gjorde ett github repo för våran grupp och gjorde en main och en dev branch och gjorde repot synligt och delade allt med mina gruppmedlemmar. Jag skapade en html-fil och en CSS-fil och skapade en mapp till båda med namnen assets och src. 
+
+19/11 - idag har jag skapat alla js-filer (4 stycken) och döpt allt till passsnade namn som hänger ihop med vad varje js-fil gör. Vi har pratat i gruppen om hur vi ska dela upp arbetet och vem som ska göra vad så alla får göra lite av allt. Sen har vi diskuterat hur vi ska lägga upp allt för dessa kommande två veckorna så vi får mest nytta av tiden.
+
+
+
+
+
+Utvärdering och reflektion
+
+
+Skriv vad du har lärt dig av att arbeta i gruppen.
+
+Sammanfatta hur du tycker att arbetet i gruppen har fungerat.
+
