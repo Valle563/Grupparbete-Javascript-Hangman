@@ -1,0 +1,1 @@
+import { createKeyboard } from './word-management'

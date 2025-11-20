@@ -15,24 +15,23 @@
 <body>
 <!-- Valentino -->
 <div class="hangman">
-    <div class="gallows">
-
-        <div class="beam"></div>
-        <div class="rope"></div>
-    </div>
+    <div class="stand base"></div>
+    <div class="stand pole"></div>
+    <div class="stand top"></div>
+    <div class="stand rope"></div>
     
     <div class="man">
-        <div class="head hidden"></div>
-        <div class="body hidden"></div>
-        <div class="arm left hidden"></div>
-        <div class="arm right hidden"></div>
-        <div class="leg left hidden"></div>
-        <div class="leg right hidden"></div>
+        <div class="part head"></div>
+        <div class="part body"></div>
+        <div class="part arm left"></div>
+        <div class="part arm right"></div>
+        <div class="part leg left"></div>
+        <div class="part leg right"></div>
     </div>
 </div>
-    
 
-
+<button id="nextPart"> Visa nästa del </button>
+<button id="resetMan"> Återställ </button>
 
 
 
@@ -49,7 +48,16 @@
 
 <!-- Henrik -->
 
-<div class="guessed-letters">_ _ _ _</div>
+<div class="guessed-letter">
+    <ul class="letter-list">
+        <li class="letter"></li>
+        <li class="letter"></li>
+        <li class="letter"></li>
+        <li class="letter"></li>
+        <li class="letter"></li>
+        <li class="letter"></li>
+    </ul>
+</div>
 
 
 </body>

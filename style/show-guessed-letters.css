@@ -1,0 +1,8 @@
+.letter-list{
+    display: flex;
+    list-style: none;
+    gap: 5em;
+}
+.letter-list, .letter{
+    border-bottom: 3px solid black;
+}
