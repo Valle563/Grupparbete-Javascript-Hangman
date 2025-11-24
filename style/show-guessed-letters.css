@@ -1,8 +1,7 @@
-.letter-list{
-    display: flex;
-    list-style: none;
-    gap: 5em;
-}
-.letter-list, .letter{
-    border-bottom: 3px solid black;
+.guessed-letters {
+    font-size: 2.5em;
+    letter-spacing: 10px;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
 }
