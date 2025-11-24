@@ -1,13 +1,20 @@
 
-// creating a keyboard
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
 
-const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-export function createKeyboard(container){
-    container.innerHTML = ''
-    for(const letter of letters) {
-        const keyButton = document.createElement('button')
-        keyButton.innerText = letter
+export function createKeyboard(container, onGuess) {
+	container.innerHTML = ''
+	for (const letter of letters) {
+		const keyButton = document.createElement("button")
+		keyButton.innerText = letter
+		keyButton.classList.add("keyButton")
 
-        container.appendChild(keyButton)
-    }
+		keyButton.addEventListener("click", () => {
+		  onGuess(letter, keyButton)
+		})
+
+		container.appendChild(keyButton)
+	  }
 }
+
+
+
