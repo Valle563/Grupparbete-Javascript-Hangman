@@ -1,3 +1,6 @@
+
+// creating a keyboard
+
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 export function createKeyboard(container){
     container.innerHTML = ''

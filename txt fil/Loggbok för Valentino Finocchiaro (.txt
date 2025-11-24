@@ -11,6 +11,9 @@ Jag gjorde ett github repo för våran grupp och gjorde en main och en dev branc
 
 19/11 - idag har jag skapat alla js-filer (5 stycken) och döpt allt till passsnade namn som hänger ihop med vad varje js-fil gör. Vi har pratat i gruppen om hur vi ska dela upp arbetet och vem som ska göra vad så alla får göra lite av allt. Sen har vi diskuterat hur vi ska lägga upp allt för dessa kommande två veckorna så vi får mest nytta av tiden. Jag skapade också css filer till alla js filer och jag är klar med alla branches och delat allt till main och hämtat allt från dev till alla branches.
 
+20/11 - idag har jag börjat koda i min fil mest i html och js, jag har gjort massa divar till gubbens kropp.
+
+21/11 - idag har jag fortsatt att koda i min html och min js.
 
 
 
