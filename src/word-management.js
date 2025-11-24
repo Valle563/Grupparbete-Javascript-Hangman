@@ -1,5 +1,8 @@
+
+// creating a keyboard
+
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-function createKeyboard(container){
+export function createKeyboard(container){
     container.innerHTML = ''
     for(const letter of letters) {
         const keyButton = document.createElement('button')

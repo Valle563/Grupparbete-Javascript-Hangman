@@ -14,25 +14,22 @@
 </head>
 <body>
 <!-- Valentino -->
-<div class="hangman">
-    <div class="stand base"></div>
-    <div class="stand pole"></div>
-    <div class="stand top"></div>
-    <div class="stand rope"></div>
-    
-    <div class="man">
-        <div class="part head"></div>
-        <div class="part body"></div>
-        <div class="part arm left"></div>
-        <div class="part arm right"></div>
-        <div class="part leg left"></div>
-        <div class="part leg right"></div>
-    </div>
-</div>
+<figure>
+    <svg width="501" height="565" viewBox="0 0 501 565" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse id="ground" cx="250.5" cy="536" rx="250.5" ry="29" fill="black" fill-opacity="0.06"/>
+        <path id="scaffold" fill-rule="evenodd" clip-rule="evenodd"
+        d="M85 1C85 0.447715 85.4477 0 86 0H404C404.552 0 405 0.447715 405 1V15C405 15.5523 404.552 16 404 16H199.522C199.257 16 199.002 16.1054 198.815 16.2929L101.293 113.815C101.105 114.002 101 114.257 101 114.522V530C101 530.552 100.552 531 100 531H86C85.4477 531 85 530.552 85 530V1Z"
+        fill="black"/>
 
-<button id="nextPart"> Visa nästa del </button>
-<button id="resetMan"> Återställ </button>
+        <path id="legs" d="M365 385.679L365 286H362L362 388" fill="black"/>
+        <path id="arms" d="M359.5 195L359.464 295.747" stroke="black" stroke-width="3"/>
+        <path id="body" d="M361.5 168V172" stroke="black" stroke-width="3"/>
+        <path id="head" d="M347.858 134.23C344.947 155.571..." fill="black"/>
+    </svg>
+</figure>
 
+<button id="next">Visa nästa kroppsdel</button>
+<button id="reset">Återställ</button>
 
 
 <!-- Antonina -->
