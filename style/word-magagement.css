@@ -1,4 +1,14 @@
 
+.keyboard {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 1em;
+  }
+
+
+
 .keyButton {
 	padding: 0.4em;
 	margin: 0.2em;
