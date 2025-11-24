@@ -6,3 +6,27 @@
 #leg-right{
     display: none;
 }
+
+figure {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+svg.hangman {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+/* Mobilanpassning */
+@media (max-width: 350px) {
+  svg.hangman {
+    max-width: 300px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
