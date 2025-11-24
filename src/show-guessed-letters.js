@@ -1,6 +1,6 @@
 import { words } from './svenska-ord.js';
 
- const secretWord = words[Math.floor(Math.random() * words.length)];
+ const secretWord = words[Math.floor(Math.random() * words.length)].toUpperCase();
 
 
 function createLines () {
