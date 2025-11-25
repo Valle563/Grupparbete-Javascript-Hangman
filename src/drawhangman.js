@@ -12,16 +12,15 @@ let step = 0;
 function showNextPart(){
     if (step < parts.length) {
         parts[step].classList.remove('hidden');
-        swingBody();
         step++;
     }
 }
 
-function swingBody() {
-    const man = document.querySelector('#man');
-    man.classList.add('swing')
-    setTimeout(() => man.classList.remove('swing'), 500)
-}
+// function swingBody() {
+//     const man = document.querySelector('#man');
+//     man.classList.add('swing')
+//     setTimeout(() => man.classList.remove('swing'), 500)
+// }
 
 function resetMan () {
     parts.forEach(part => part.classList.add('hidden'))
@@ -32,4 +31,4 @@ function resetMan () {
 document.querySelector("#next").addEventListener("click", showNextPart);
 document.querySelector("#reset").addEventListener("click", resetMan);
 
-export { parts, showNextPart, resetMan };
+export { showNextPart, resetMan };

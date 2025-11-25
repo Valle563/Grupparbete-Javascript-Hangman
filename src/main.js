@@ -1,5 +1,4 @@
-
-import { parts, showNextPart, resetMan } from './drawhangman.js'
+import { showNextPart, resetMan } from './drawhangman.js'
 import { createKeyboard } from './word-management.js'
 import { secretWord, createLines } from './show-guessed-letters.js'
 
@@ -10,6 +9,7 @@ createLines()
 let correct = 0
 let wrong = 0
 
+// borde flyttas till word-management.js
  function handleGuess(letter, button) {
 	 const display = document.querySelector('.guessed-letter')
 	 const current = display.textContent.split(' ')
@@ -30,3 +30,6 @@ let wrong = 0
  }
 
 createKeyboard(keyboardContainer, handleGuess)
+
+showNextPart()
+resetMan()
