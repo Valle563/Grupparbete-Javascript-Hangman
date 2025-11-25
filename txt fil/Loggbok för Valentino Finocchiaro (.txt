@@ -15,6 +15,8 @@ Jag gjorde ett github repo för våran grupp och gjorde en main och en dev branc
 
 21/11 - idag har jag fortsatt att koda i min html och min js.
 
+24/11 - idag har jag gjort klart min draw hangman gubbe så hans kroppsdelar kommer upp en och en med  hjälp av javscript och det finns en reset knapp som vi ska jobba mer med. Vi är redo för att visa vad vi har gjort imorgon för test imorgon för en annan grupp!
+
 
 
 
