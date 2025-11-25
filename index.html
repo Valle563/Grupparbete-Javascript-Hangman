@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron Pirates Hangman game
-    </title>
-    <link rel="stylesheet" href="./style/drawhangman.css">
-    <link rel="stylesheet" href="./style/game-over.css">
-    <link rel="stylesheet" href="./style/score-screen.css">
-    <link rel="stylesheet" href="./style/show-guessed-letters.css">
-    <link rel="stylesheet" href="./style/word-magagement.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iron Pirates Hangman game</title>
+    <link rel="stylesheet" href="./style/drawhangman.css" />
+    <link rel="stylesheet" href="./style/game-over.css" />
+    <link rel="stylesheet" href="./style/score-screen.css" />
+    <link rel="stylesheet" href="./style/show-guessed-letters.css" />
+    <link rel="stylesheet" href="./style/word-magagement.css" />
     <script type="module" src="./src/main.js"></script>
     <script type="module" src="./src/drawhangman.js"></script>
     <script type="module" src="./src/show-guessed-letters.js"></script>
-    
-</head>
-<body>
-<!-- Valentino -->
-<figure>
-  <svg width="501" height="565" viewBox="0 0 501 565" xmlns="http://www.w3.org/2000/svg">
+    <script type="module" src="./src/word-management.js"></script>
+  </head>
+  <body>
+    <!-- Valentino -->
+    <figure>
+      <svg
+        width="501"
+        height="565"
+        viewBox="0 0 501 565"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <ellipse
+          id="ground"
+          cx="250.5"
+          cy="536"
+          rx="250.5"
+          ry="29"
+          fill="black"
+          fill-opacity="0.06"
+        />
 
-    <ellipse id="ground" cx="250.5" cy="536" rx="250.5" ry="29" fill="black" fill-opacity="0.06"/>
+        <path
+          id="scaffold"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M85 1C85 0.447715 85.4477 0 86 0H404C404.552 0 405 0.447715 405 1V15C405 15.5523 404.552 16 404 16H199.522C199.257 16 199.002 16.1054 198.815 16.2929L101.293 113.815C101.105 114.002 101 114.257 101 114.522V530C101 530.552 100.552 531 100 531H86C85.4477 531 85 530.552 85 530V1Z"
+          fill="black"
+        />
 
-    <path id="scaffold" fill-rule="evenodd" clip-rule="evenodd"
-      d="M85 1C85 0.447715 85.4477 0 86 0H404C404.552 0 405 0.447715 405 1V15C405 15.5523 404.552 16 404 16H199.522C199.257 16 199.002 16.1054 198.815 16.2929L101.293 113.815C101.105 114.002 101 114.257 101 114.522V530C101 530.552 100.552 531 100 531H86C85.4477 531 85 530.552 85 530V1Z"
-      fill="black"/>
+        <line
+          id="body"
+          x1="360"
+          y1="180"
+          x2="360"
+          y2="300"
+          stroke="black"
+          stroke-width="6"
+          stroke-linecap="round"
+        />
+        <circle
+          id="head"
+          cx="360"
+          cy="140"
+          r="35"
+          stroke="black"
+          stroke-width="5"
+          fill="none"
+        />
+        <line
+          id="arm-left"
+          x1="360"
+          y1="210"
+          x2="310"
+          y2="260"
+          stroke="black"
+          stroke-width="5"
+          stroke-linecap="round"
+        />
+        <line
+          id="arm-right"
+          x1="360"
+          y1="210"
+          x2="410"
+          y2="260"
+          stroke="black"
+          stroke-width="5"
+          stroke-linecap="round"
+        />
+        <line
+          id="leg-left"
+          x1="360"
+          y1="300"
+          x2="320"
+          y2="370"
+          stroke="black"
+          stroke-width="5"
+          stroke-linecap="round"
+        />
+        <line
+          id="leg-right"
+          x1="360"
+          y1="300"
+          x2="400"
+          y2="370"
+          stroke="black"
+          stroke-width="5"
+          stroke-linecap="round"
+        />
+      </svg>
+    </figure>
 
-    <line id="body" x1="360" y1="180" x2="360" y2="300" stroke="black" stroke-width="6" stroke-linecap="round"/>
-    <circle id="head" cx="360" cy="140" r="35" stroke="black" stroke-width="5" fill="none"/>
-    <line id="arm-left" x1="360" y1="210" x2="310" y2="260" stroke="black" stroke-width="5" stroke-linecap="round"/>
-    <line id="arm-right" x1="360" y1="210" x2="410" y2="260" stroke="black" stroke-width="5" stroke-linecap="round"/>
-    <line id="leg-left" x1="360" y1="300" x2="320" y2="370" stroke="black" stroke-width="5" stroke-linecap="round"/>
-    <line id="leg-right" x1="360" y1="300" x2="400" y2="370" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <button id="next">Visa nästa kroppsdel</button>
+    <button id="reset">Återställ</button>
+  
+    <!-- Henrik -->
 
-  </svg>
-</figure>
+    <div class="guessed-letter">_ _ _ _ _</div>
+   
+    <!-- Antonina -->
 
-<button id="next">Visa nästa kroppsdel</button>
-<button id="reset">Återställ</button>
+    <div class="keyboard"></div>
 
 
-<!-- Antonina -->
-
-
-
-
-
-
-
-<div class="keyboard"></div>
-
-
-<!-- Henrik -->
-
-<div class="guessed-letter">_ _ _ _ _</div>
-
-
-</body>
+  </body>
 </html>
