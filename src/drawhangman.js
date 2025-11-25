@@ -10,22 +10,17 @@ const parts = [
 let step = 0;
 
 function showNextPart(){
-     if (step < parts.length) {
+    if (step < parts.length) {
         parts[step].classList.remove('hidden');
         step++;
     }
 }
-
 
 function resetMan () {
     parts.forEach(part => part.classList.add('hidden'))
     step = 0;
 }
 
-// function resetMan () {
-//     parts.forEach(part => part.style.display = 'none')
-//     step = 0;
-// }
 
 document.querySelector("#next").addEventListener("click", showNextPart);
 document.querySelector("#reset").addEventListener("click", resetMan);
