@@ -1,11 +1,16 @@
-#head,
+/* #head,
 #body,
 #arm-left,
 #arm-right,
 #leg-left,
 #leg-right{
-    display: none;
+display: none;
+} */
+
+.hidden {
+  visibility: hidden;
 }
+ 
 
 figure {
   max-width: 100%;
