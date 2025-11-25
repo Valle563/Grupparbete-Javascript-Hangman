@@ -1,5 +1,5 @@
 
-
+import { parts, showNextPart, resetMan } from './drawhangman.js'
 import { createKeyboard } from './word-management.js'
 import { secretWord, createLines } from './show-guessed-letters.js'
 
