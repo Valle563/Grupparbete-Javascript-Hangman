@@ -6,10 +6,10 @@ const keyboardContainer = document.querySelector(".keyboard")
 
 createLines()
 
+// borde flyttas till word-management.js
 let correct = 0
 let wrong = 0
 
-// borde flyttas till word-management.js
  function handleGuess(letter, button) {
 	 const display = document.querySelector('.guessed-letter')
 	 const current = display.textContent.split(' ')
