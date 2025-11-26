@@ -15,6 +15,10 @@ Jag gjorde ett github repo för våran grupp och gjorde en main och en dev branc
 
 21/11 - idag har jag fortsatt att koda i min html och min js.
 
+24/11 - idag har jag gjort klart min draw hangman gubbe så hans kroppsdelar kommer upp en och en med  hjälp av javscript och det finns en reset knapp som vi ska jobba mer med. Vi är redo för att visa vad vi har gjort imorgon för test imorgon för en annan grupp!
+
+25/11 - idag har vi haft vårat användartest. Vi fick bra med feedback (+ snygg layout - lite tips om de blir svårt, lite mer motivasion.). Jag har skapat en fil för en hamburgarmeny och lagt till ett rep till min hangman gubbe. jag hade också bytt från "style.display = 'none'" till "classList". Vi har fått mycket gjort idaag tycker jag och vi har även disskuterat lite mer om våran skiss. 
+
 
 
 

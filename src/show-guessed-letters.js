@@ -1,13 +1,24 @@
 import { words } from './svenska-ord.js';
+import { resetMan } from './drawhangman.js';
 
- const secretWord = words[Math.floor(Math.random() * words.length)].toUpperCase();
+export const secretWord = words[Math.floor(Math.random() * words.length)].toUpperCase();
 
 
-function createLines () {
+export function createLines () {
     document.querySelector('.guessed-letter').textContent = secretWord
     .split('')
     .map(() => '_')
     .join(' ');
 }
+
+
+// function newSecretWord(){
+//     secretWord = words[Math.floor(Math.random() * words.length)].toUpperCase()
+// }
+
+// newSecretWord();
+
+
+
 createLines();
-export { secretWord, createLines };
+resetMan();
