@@ -10,6 +10,9 @@ let correct = 0
 let wrong = 0
 let currentSecretWord = secretWord
 
+
+/* Player modal handling moved to `src/new-player.js` */
+
 function handleGuess(letter, button) {
 	const display = document.querySelector('.guessed-letter')
 	const current = display.textContent.split(' ')
@@ -29,7 +32,7 @@ function handleGuess(letter, button) {
 	.join(' ')
 }
 
-function restartGame() {
+export function restartGame() {
 	
 	resetMan()
 	
@@ -52,4 +55,6 @@ createKeyboard(keyboardContainer, handleGuess)
 
 
 document.querySelector("#reset").addEventListener("click", restartGame)
+
+
 

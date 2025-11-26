@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./style/score-screen.css" />
     <link rel="stylesheet" href="./style/show-guessed-letters.css" />
     <link rel="stylesheet" href="./style/word-magagement.css" />
+    <link rel="stylesheet" href="./style/player.css" />
     <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/new-player.js"></script>
     <!-- <script type="module" src="./src/drawhangman.js"></script>
     <script type="module" src="./src/show-guessed-letters.js"></script>
     <script type="module" src="./src/word-management.js"></script> -->
@@ -63,6 +65,14 @@
         />
       </svg>
     </figure>
+
+    <div id="player-screen">
+        <h2>Skriv in ditt namn</h2>
+        <input type="text" id="playerInput" placeholder="Ditt namn">
+        <button id="startgame"> Starta Spelet </button>
+    </div>
+        
+    <p> Spelare: <strong id="player-name"></strong></p>
 
     <button id="next">Visa nästa kroppsdel</button>
     <button id="reset">Återställ</button>
