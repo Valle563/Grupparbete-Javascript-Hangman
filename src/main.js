@@ -2,6 +2,7 @@
 
 import { createKeyboard } from './word-management.js'
 import { secretWord, createLines } from './show-guessed-letters.js'
+import { checkGameEnd } from './game-over.js'
 
 const keyboardContainer = document.querySelector(".keyboard")
 
@@ -18,7 +19,7 @@ let wrong = 0
 		    button.classList.add("correct")
 		    correct++
 		  } else {
-		    button.classList.add("wrong")
+		    button.classList.add("wrong", showNextPart())
 		    wrong++
 		  }
 	 button.disabled = true
@@ -27,6 +28,8 @@ let wrong = 0
 	 .split('')
 	 .map((l, i) => (l === letter ? l : current[i]))
 	 .join(' ')
+
+      checkGameEnd(secretWord, wrong, display.textContent, correct)
  }
 
 createKeyboard(keyboardContainer, handleGuess)
