@@ -16,11 +16,6 @@ function showNextPart(){
     }
 }
 
-// function swingBody() {
-//     const man = document.querySelector('#man');
-//     man.classList.add('swing')
-//     setTimeout(() => man.classList.remove('swing'), 500)
-// }
 
 function resetMan () {
     parts.forEach(part => part.classList.add('hidden'))
