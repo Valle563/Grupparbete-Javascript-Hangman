@@ -1,6 +1,6 @@
 import { showNextPart, resetMan } from './drawhangman.js'
 import { createKeyboard } from './word-management.js'
-import { secretWord, createLines } from './show-guessed-letters.js'
+import { getSecretWord, setSecretWord, createLines } from './show-guessed-letters.js'
 import { words } from './svenska-ord.js'
 
 
@@ -8,7 +8,7 @@ const keyboardContainer = document.querySelector(".keyboard")
 
 let correct = 0
 let wrong = 0
-let currentSecretWord = secretWord
+let currentSecretWord = getSecretWord()
 
 
 /* Player modal handling moved to `src/new-player.js` */
@@ -38,6 +38,8 @@ export function restartGame() {
 	
 	
 	currentSecretWord = words[Math.floor(Math.random() * words.length)].toUpperCase()
+	// informera show-guessed-letters om det nya ordet så createLines visar rätt antal rader
+	setSecretWord(currentSecretWord)
 	
 	
 	correct = 0
