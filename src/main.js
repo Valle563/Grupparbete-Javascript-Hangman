@@ -11,24 +11,24 @@ let correct = 0
 let wrong = 0
 let currentSecretWord = secretWord
 
-function handleGuess(letter, button) {
-	const display = document.querySelector('.guessed-letter')
-	const current = display.textContent.split(' ')
+// function handleGuess(letter, button) {
+// 	const display = document.querySelector('.guessed-letter')
+// 	const current = display.textContent.split(' ')
 	 
-	if (currentSecretWord.includes(letter)) {
-		button.classList.add("correct")
-		correct++
-		} else {
-		button.classList.add("wrong"), showNextPart()
-		wrong++
-		}
-	button.disabled = true
+// 	if (currentSecretWord.includes(letter)) {
+// 		button.classList.add("correct")
+// 		correct++
+// 		} else {
+// 		button.classList.add("wrong"), showNextPart()
+// 		wrong++
+// 		}
+// 	button.disabled = true
 
-	display.textContent = currentSecretWord
-	.split('')
-	.map((l, i) => (l === letter ? l : current[i]))
-	.join(' ')
-}
+// 	display.textContent = currentSecretWord
+// 	.split('')
+// 	.map((l, i) => (l === letter ? l : current[i]))
+// 	.join(' ')
+// }
 
 function restartGame() {
 	
