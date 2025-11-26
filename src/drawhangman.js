@@ -10,7 +10,7 @@ const parts = [
 let step = 0;
 
 function showNextPart(){
-     if (step < parts.length) {
+    if (step < parts.length) {
         parts[step].style.display = 'block';
         step++;
     }
@@ -23,3 +23,5 @@ function resetMan () {
 
 document.querySelector("#next").addEventListener("click", showNextPart);
 document.querySelector("#reset").addEventListener("click", resetMan);
+
+export { showNextPart, resetMan };
