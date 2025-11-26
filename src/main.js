@@ -1,21 +1,20 @@
 import { showNextPart, resetMan } from './drawhangman.js'
 import { createKeyboard } from './word-management.js'
 import { secretWord, createLines } from './show-guessed-letters.js'
+import { words } from './svenska-ord.js'
 
 
 const keyboardContainer = document.querySelector(".keyboard")
 
-createLines()
-
-
 let correct = 0
 let wrong = 0
+let currentSecretWord = secretWord
 
- function handleGuess(letter, button) {
+function handleGuess(letter, button) {
 	const display = document.querySelector('.guessed-letter')
 	const current = display.textContent.split(' ')
 	 
-	if (secretWord.includes(letter)) {
+	if (currentSecretWord.includes(letter)) {
 		button.classList.add("correct")
 		correct++
 		} else {
@@ -24,14 +23,33 @@ let wrong = 0
 		}
 	button.disabled = true
 
-	display.textContent = secretWord
+	display.textContent = currentSecretWord
 	.split('')
 	.map((l, i) => (l === letter ? l : current[i]))
 	.join(' ')
 }
 
+function restartGame() {
+	
+	resetMan()
+	
+	
+	currentSecretWord = words[Math.floor(Math.random() * words.length)].toUpperCase()
+	
+	
+	correct = 0
+	wrong = 0
+	
+	
+	createLines()
+	
+	createKeyboard(keyboardContainer, handleGuess)
+}
+
+
+createLines()
 createKeyboard(keyboardContainer, handleGuess)
 
-showNextPart()
-resetMan()
+
+document.querySelector("#reset").addEventListener("click", restartGame)
 
