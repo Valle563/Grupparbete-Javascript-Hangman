@@ -1,7 +1,6 @@
 import { showNextPart, resetMan } from './drawhangman.js'
 import { createKeyboard } from './word-management.js'
-import { getSecretWord, setSecretWord, createLines,  } from './show-guessed-letters.js'
-import { checkGameEnd } from './game-over.js'
+import { secretWord, createLines } from './show-guessed-letters.js'
 import { words } from './svenska-ord.js'
 
 
@@ -9,38 +8,56 @@ const keyboardContainer = document.querySelector(".keyboard")
 
 let correct = 0
 let wrong = 0
-let currentSecretWord = getSecretWord()
+let currentSecretWord = secretWord
 
 
-/* Player modal handling moved to `src/new-player.js` */
+const playerScreen = document.querySelector('#player-screen')
+const startBtn = document.querySelector('#startgame')
+const playerInput = document.querySelector('#playerInput')
+const playerNameEl = document.querySelector('#player-name')
 
-// function handleGuess(letter, button) {
-// 	const display = document.querySelector('.guessed-letter')
-// 	const current = display.textContent.split(' ')
+
+startBtn && startBtn.addEventListener('click', () => {
+	const name = (playerInput && playerInput.value.trim()) || 'Spelare'
+	if (playerNameEl) playerNameEl.textContent = name
+	if (playerScreen) playerScreen.classList.add('hidden')
+	
+	if (typeof restartGame === 'function') restartGame()
+})
+
+
+playerInput && playerInput.addEventListener('keydown', (e) => {
+	if (e.key === 'Enter') {
+		e.preventDefault()
+		startBtn && startBtn.click()
+	}
+})
+
+function handleGuess(letter, button) {
+	const display = document.querySelector('.guessed-letter')
+	const current = display.textContent.split(' ')
 	 
-// 	if (currentSecretWord.includes(letter)) {
-// 		button.classList.add("correct")
-// 		correct++
-// 		} else {
-// 		button.classList.add("wrong"), showNextPart()
-// 		wrong++
-// 		}
-// 	button.disabled = true
+	if (currentSecretWord.includes(letter)) {
+		button.classList.add("correct")
+		correct++
+		} else {
+		button.classList.add("wrong"), showNextPart()
+		wrong++
+		}
+	button.disabled = true
 
-// 	display.textContent = currentSecretWord
-// 	.split('')
-// 	.map((l, i) => (l === letter ? l : current[i]))
-// 	.join(' ')
-// }
+	display.textContent = currentSecretWord
+	.split('')
+	.map((l, i) => (l === letter ? l : current[i]))
+	.join(' ')
+}
 
-export function restartGame() {
+function restartGame() {
 	
 	resetMan()
 	
 	
 	currentSecretWord = words[Math.floor(Math.random() * words.length)].toUpperCase()
-	// informera show-guessed-letters om det nya ordet så createLines visar rätt antal rader
-	setSecretWord(currentSecretWord)
 	
 	
 	correct = 0
@@ -59,26 +76,5 @@ createKeyboard(keyboardContainer, handleGuess)
 
 document.querySelector("#reset").addEventListener("click", restartGame)
 
- function handleGuess(letter, button) {
-	 const display = document.querySelector('.guessed-letter')
-	 const current = display.textContent.split(' ')
-      const currentSecretWord = getSecretWord()
 
-	 if (currentSecretWord.includes(letter)) {
-		    button.classList.add("correct")
-		    correct++
-		  } else {
-		    button.classList.add("wrong", showNextPart())
-		    wrong++
-		  }
-	 button.disabled = true
 
-	 display.textContent = currentSecretWord
-	 .split('')
-	 .map((l, i) => (l === letter ? l : current[i]))
-	 .join(' ')
-
-      checkGameEnd(currentSecretWord, wrong, display.textContent, correct)
- }
-
-createKeyboard(keyboardContainer, handleGuess)
