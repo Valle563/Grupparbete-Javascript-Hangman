@@ -17,7 +17,6 @@ function showNextPart(){
 }
 
 // part.classList.add('moving');
-
 // part.addEventListener('animationend', () => {
 //     part.classList.remove('moving')
 // }, { once: true })

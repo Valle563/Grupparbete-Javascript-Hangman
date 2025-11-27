@@ -21,6 +21,7 @@ Jag gjorde ett github repo för våran grupp och gjorde en main och en dev branc
 
 26/11 - idag har vi gjort klart så allt hänger ihop så spelet fungerar som det ska och jag har även gjort en player-name och en namnskylt typ så de står vem som spelar. 
 
+27/11 - Idag har jag gjort klart "nyspelare" vyn som kommer upp innan spelet startar. Jag har också fixat återställsknappen med css och tog bort "nästa kroppsdel" för allt går automatiskt.
 
 
 Utvärdering och reflektion
