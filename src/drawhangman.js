@@ -16,6 +16,11 @@ function showNextPart(){
     }
 }
 
+// part.classList.add('moving');
+
+// part.addEventListener('animationend', () => {
+//     part.classList.remove('moving')
+// }, { once: true })
 
 function resetMan () {
     parts.forEach(part => part.classList.add('hidden'))
