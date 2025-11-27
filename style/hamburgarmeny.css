@@ -1,0 +1,21 @@
+
+.hamburger {
+	border: none;
+	background: white;
+}
+
+#score-menu {
+	position: fixed;
+	top: 2em;
+	left: 0.2em;
+	padding: 1em;
+	width: 200px;
+}
+
+.hamburger .hidden {
+	display: none;
+}
+
+.guessed-list {
+	margin-top: 0.5em;
+}

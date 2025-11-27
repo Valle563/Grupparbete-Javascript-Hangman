@@ -1,4 +1,5 @@
-export function showGameOver(didWin, secretWord, score){
+export function showGameOver(didWin, secretWord, score) {
+
 
 const gameOverScreen = document.querySelector('.game-over')
 const result = document.querySelector('.result')
@@ -14,7 +15,7 @@ gameOverScreen.style.display = 'flex'
 
 export function checkGameEnd(secretWord, wrong, display, score) {
     const wordWithoutSpaces = display.replace(/ /g, '')
-    
+
     if (wordWithoutSpaces === secretWord) {
         // Vann!
         return showGameOver(true, secretWord, score)
