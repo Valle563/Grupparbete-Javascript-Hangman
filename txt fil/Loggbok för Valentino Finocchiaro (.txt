@@ -19,6 +19,7 @@ Jag gjorde ett github repo för våran grupp och gjorde en main och en dev branc
 
 25/11 - idag har vi haft vårat användartest. Vi fick bra med feedback (+ snygg layout - lite tips om de blir svårt, lite mer motivasion.). Jag har skapat en fil för en hamburgarmeny och lagt till ett rep till min hangman gubbe. jag hade också bytt från "style.display = 'none'" till "classList". Vi har fått mycket gjort idaag tycker jag och vi har även disskuterat lite mer om våran skiss. 
 
+26/11 - idag har vi gjort klart så allt hänger ihop så spelet fungerar som det ska och jag har även gjort en player-name och en namnskylt typ så de står vem som spelar. 
 
 
 
