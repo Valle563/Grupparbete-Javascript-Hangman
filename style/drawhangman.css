@@ -41,6 +41,22 @@ svg.hangman {
   height: auto;
 }
 
+#reset {
+  margin-left: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 7em;
+  height: 2em;
+  font-size: 15px;
+  background-color: rgb(81, 112, 247);
+
+  transition: transform 0.2s, background-color 0.2s;
+}
+#reset:hover {
+  transform: scale(1.1);
+  background-color: rgb(150, 150, 250);
+}
+
 /* Mobilanpassning */
 @media (max-width: 350px) {
   svg.hangman {
