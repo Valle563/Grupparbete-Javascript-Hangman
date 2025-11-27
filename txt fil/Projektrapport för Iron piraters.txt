@@ -42,17 +42,17 @@ Användartester den 2025-11-25: i skolan.
 Code reviews
 Code review den 2025-11-26: smågrupper.
 
-*feedback 2 stars =  Bra struktur i koden 'lätt att se vad som är vad'
+*feedback 2 stars =  Bra struktur i koden 'lätt att se vad som är vad'.
 
-*feedback 1 wish =
+*feedback 1 wish = Komentera koden och vad du gör mer.
 
 
 Code reviews
 Code review den 2025-11-27: smågrupper.
 
-*feedback 2 stars = Tydlig kod och lätt att förstå men även lätt läst
+*feedback 2 stars = Tydlig kod och lätt att förstå men även lätt läst.
 
-*feedback 1 wish = för små knappar? kan bli svårt på mobil, små skärmar
+*feedback 1 wish = för små knappar? kan bli svårt på mobil, små skärmar.
 
 
 
