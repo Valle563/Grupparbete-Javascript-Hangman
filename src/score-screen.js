@@ -2,6 +2,7 @@ const scoreMenu = document.querySelector('#score-menu')
 const hamburger = document.querySelector('.hamburger')
 const scoreDisplayMenu = document.querySelector('.score-display')
 const wordDisplayMenu = document.querySelector('.word-display')
+const playerNameScoreEl = document.querySelector('.player-name-scoremenu')
 
 // wrapped listener in safety check
 if (hamburger && scoreMenu) {
@@ -9,6 +10,11 @@ if (hamburger && scoreMenu) {
 		scoreMenu.classList.toggle('hidden')
 		// When menu opens, refresh word display from main screen
 		updateMenuWord()
+
+		// Get the player name from local storage (Update player name in score menu every time menu is shown)
+
+		const playerName = localStorage.getItem('playerName') || 'Spelare'
+		if (playerNameScoreEl) playerNameScoreEl.textContent = playerName
 	})
 }
 
