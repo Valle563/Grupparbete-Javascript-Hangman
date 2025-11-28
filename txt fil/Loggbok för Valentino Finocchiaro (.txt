@@ -23,6 +23,8 @@ Jag gjorde ett github repo för våran grupp och gjorde en main och en dev branc
 
 27/11 - Idag har jag gjort klart "nyspelare" vyn som kommer upp innan spelet startar. Jag har också fixat återställsknappen med css och tog bort "nästa kroppsdel" för allt går automatiskt.
 
+28/11 - Idag har jag fixat lite buggar i spelet, en var att gubben fick inte alla kroppsdelar när man fick fel bokstav för att 'button.classList.add("wrong")showNextPart()' låg på fel rad så de blev en bugg och en annan var att jag tagit bort återställsknappen för den skapade lite problem när man skulle återställa så jag tog bort själva knappen men jag behöll id och fixade om lite.
+
 
 Utvärdering och reflektion
 
