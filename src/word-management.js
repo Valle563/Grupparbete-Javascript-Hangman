@@ -24,6 +24,20 @@ export function createKeyboard(container, onGuess) {
 let correct = 1
 let wrong = 0
 
+document.addEventListener('keydown', (event) => {
+	const key = event.key.toUpperCase()
+	// Allow svenska alphabet only
+	if (!letters.includes(key)) return
+	// Find the matching button on screen
+	const buttons = document.querySelectorAll('.keyButton')
+	const button = [...buttons].find(btn => btn.innerText === key)
+	// Simulate klick If button exists and is not already used
+	if (button && !button.disabled) {
+		button.click()
+	}
+})
+
+
 export function handleGuess(letter, button) {
 	const display = document.querySelector('.guessed-letter')
 	const current = display.textContent.split(' ')
@@ -31,8 +45,9 @@ export function handleGuess(letter, button) {
 
 	if (currentSecretWord.includes(letter)) {
 		button.classList.add("correct")
-		updateMenuScore(correct)
+		//updateMenuScore(correct)
 		correct++
+		updateMenuScore(correct)
 		} else {
 		button.classList.add("wrong", showNextPart())
 		wrong++
