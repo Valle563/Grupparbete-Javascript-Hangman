@@ -26,8 +26,7 @@ function resetMan () {
     step = 0;   
 }
 
-
-document.querySelector("#next").addEventListener("click", showNextPart);
 document.querySelector("#reset").addEventListener("click", resetMan);
+document.querySelector("#next").addEventListener("click", showNextPart);
 
 export { showNextPart, resetMan };

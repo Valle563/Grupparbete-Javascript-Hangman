@@ -47,8 +47,9 @@ export function handleGuess(letter, button) {
 		button.classList.add("correct")
 		correct++
 		updateMenuScore(correct)
-		} else {
-		button.classList.add("wrong", showNextPart())
+	} else {
+		button.classList.add("wrong")
+		showNextPart()
 		wrong++
 		}
 	button.disabled = true

@@ -16,6 +16,7 @@ svg.hangman {
 }
 
 #reset {
+  display: none;
   margin-left: 5px;
   border: 1px solid black;
   border-radius: 4px;

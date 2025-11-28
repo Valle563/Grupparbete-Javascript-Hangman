@@ -1,7 +1,7 @@
 
   .hamburger {
 	border: none;
-	background: white;
+	background: linear-gradient(135deg, #a8d8ff);
 	cursor: pointer;
   }
 
