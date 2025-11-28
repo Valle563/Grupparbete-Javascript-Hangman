@@ -31,30 +31,29 @@ Om man kör fast med ett problem förväntar vi oss att man frågar de andra i g
 Uppdelning av arbetet:
 Vi delar upp det så att Valentino jobbar i draw-hangman.js och Henrik jobbar i show-guessed-letters.js och antonina jobbar i word-magagement.js och game-over.js och score.screen.Html kör vi tillsammans och css kör man till den som man jobbar i med js filen. js jobbar vi med tillsammans. Behöver man hjälper så kan vi sitta tillsammans. 
 
-Code reviews
-Code review den 2025-11-12: vi granskade gruppen namn här kod och gav följande feedback
-något som var bra i koden
-något som var bra i koden
-förslag på något som kan förbättras
-
-Code review den 2025-11-13: gruppen namn här granskade vår kod och gav oss följande feedback
-något som var bra i koden
-något som var bra i koden
-förslag på något som kan förbättras
 Användartester
-Den 2025-11-14 fick Namn här provspela vår app och gav oss följande feedback:
-något som var bra med upplevelsen
-något som var bra med upplevelsen
-förslag på något som kan förbättras
+Användartester den 2025-11-25: i skolan.
 
-Den 2025-11-15 fick Namn här provspela vår app och gav oss följande feedback:
-något som var bra med upplevelsen
-något som var bra med upplevelsen
-förslag på något som kan förbättras
+*feedback 2 stars = Bra struktur och spelet ser bra ut.   
 
-Den 2025-11-16 fick Namn här provspela vår app och gav oss följande feedback:
-något som var bra med upplevelsen
-något som var bra med upplevelsen
-förslag på något som kan förbättras
+*feedback 1 wish = Mer possitiva kommentarer och kan vara mer gissningar. 
+
+
+Code reviews
+Code review den 2025-11-26: smågrupper.
+
+*feedback 2 stars =  Bra struktur i koden 'lätt att se vad som är vad'.
+
+*feedback 1 wish = Komentera koden och vad du gör mer.
+
+
+Code reviews
+Code review den 2025-11-27: smågrupper.
+
+*feedback 2 stars = Tydlig kod och lätt att förstå men även lätt läst.
+
+*feedback 1 wish = för små knappar? kan bli svårt på mobil, små skärmar.
+
+
 
 

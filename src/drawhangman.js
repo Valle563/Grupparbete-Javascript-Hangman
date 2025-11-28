@@ -16,14 +16,17 @@ function showNextPart(){
     }
 }
 
+// part.classList.add('moving');
+// part.addEventListener('animationend', () => {
+//     part.classList.remove('moving')
+// }, { once: true })
 
 function resetMan () {
     parts.forEach(part => part.classList.add('hidden'))
     step = 0;   
 }
 
-
-document.querySelector("#next").addEventListener("click", showNextPart);
 document.querySelector("#reset").addEventListener("click", resetMan);
+document.querySelector("#next").addEventListener("click", showNextPart);
 
 export { showNextPart, resetMan };

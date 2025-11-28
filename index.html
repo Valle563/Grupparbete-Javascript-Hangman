@@ -33,10 +33,23 @@
         </svg>
 	</button>
 
-	<div id="score-menu" class="hidden">
-		<h2>Game info</h2>
-		<!-- <h4>Score:</h4> -->
-		<div class="score-display"></div>
+	<div id="score-menu" class="hidden"> <h2>Spelinfo</h2>
+		<div class="menu-row">
+			<span>Spelate:</span>
+			<span class="player-name-scoremenu"></span>
+		</div>
+		<div class="menu-row">
+			<span>Poäng:</span>
+			<span class="score-display">0</span>
+		</div>
+		<div class="menu-row">
+			<span>Ordet:</span>
+			<span class="word-display">—</span>
+		</div>
+		<div class="menu-row">
+			<span>Gissade:</span>
+			<span class="guessed-word-display"></span>
+		</div>
 	</div>
 
 
@@ -75,17 +88,22 @@
         />
       </svg>
     </figure>
+<div id="player-screen">
+  <div class="player-box">
+    <h2>Skriv in ditt namn</h2>
 
-    <div id="player-screen">
-        <h2>Skriv in ditt namn</h2>
-        <input type="text" id="playerInput" placeholder="Ditt namn">
-        <button id="startgame"> Starta Spelet </button>
+    <div class="input-row">
+      <input type="text" id="playerInput" placeholder="Ditt namn">
+      <button id="startgame">Starta Spelet</button>
     </div>
+  </div>
+</div>
 
-    <p> Spelare: <strong id="player-name"></strong></p>
+<p>Spelare: <strong id="player-name"></strong></p>
 
-    <button id="next">Visa nästa kroppsdel</button>
-    <button id="reset">Återställ</button>
+    <div id="next">
+      <div id="reset"></div>
+    </div>
 
     <!-- Henrik -->
 

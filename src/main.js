@@ -1,3 +1,4 @@
+
 import { showNextPart, resetMan } from './drawhangman.js'
 import { createKeyboard, handleGuess } from './word-management.js'
 import { getSecretWord, setSecretWord, createLines,  } from './show-guessed-letters.js'
@@ -50,7 +51,7 @@ export function restartGame() {
 
 	createKeyboard(keyboardContainer, handleGuess)
 
-	resetScoreMenu()
+	
 
 }
 
@@ -61,4 +62,4 @@ createKeyboard(keyboardContainer, handleGuess)
 
 document.querySelector("#reset").addEventListener("click", restartGame)
 
-createKeyboard(keyboardContainer, handleGuess)
+
