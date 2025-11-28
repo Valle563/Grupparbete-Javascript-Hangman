@@ -51,7 +51,7 @@ export function restartGame() {
 
 	createKeyboard(keyboardContainer, handleGuess)
 
-	resetScoreMenu()
+	
 
 }
 
@@ -62,4 +62,4 @@ createKeyboard(keyboardContainer, handleGuess)
 
 document.querySelector("#reset").addEventListener("click", restartGame)
 
-createKeyboard(keyboardContainer, handleGuess)
+
