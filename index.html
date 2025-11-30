@@ -14,12 +14,11 @@
     <script type="module" src="./src/main.js"></script>
     <script type="module" src="./src/new-player.js"></script>
     <!-- <script type="module" src="./src/drawhangman.js"></script>
-    <script type="module" src="./src/show-guessed-letters.js"></script>
-    <script type="module" src="./src/word-management.js"></script> -->
-  </head>
-  <body>
+    <script type="module" src="./src/show-guessed-letters.js"></script> -->
+</head>
+<body>
     <!-- Valentino -->
-     <!-- hamburgarmeny -->
+    <!-- hamburgarmeny -->
 
 	<button class="hamburger">
 		<svg xmlns="http://www.w3.org/2000/svg"
@@ -47,13 +46,28 @@
 			<span>Ordet:</span>
 			<span class="word-display">—</span>
 		</div>
-		<!-- <div class="menu-row">
-			<span>Gissade:</span>
-			<span class="guessed-word-display"></span>
-		</div> -->
 
 		<h3>Senaste spel</h3>
-		<div class="score-list"></div> <!-- dynamic rows -->
+<div class="score-table-wrap">
+	<table class="score-table">
+		<thead>
+		<tr>
+			<th>Spelare</th>
+			<th>Ord</th>
+			<th>Fel</th>
+			<th>Längd</th>
+			<th>Datum</th>
+			<th>Res</th>
+		</tr>
+		</thead>
+		<tbody class="score-list">
+		<!-- Rows are generated dynamically right here -->
+		</tbody>
+	</table>
+
+</div>
+
+
 	</div>
 
 
