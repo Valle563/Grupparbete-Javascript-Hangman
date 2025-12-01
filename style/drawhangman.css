@@ -1,0 +1,59 @@
+
+.hidden {
+  visibility: hidden;
+}
+
+figure {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+svg.hangman {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+#reset {
+  display: none;
+  margin-left: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 7em;
+  height: 2em;
+  font-size: 15px;
+  background-color: rgb(81, 112, 247);
+
+  transition: transform 0.2s, background-color 0.2s;
+}
+#reset:hover {
+  transform: scale(1.1);
+  background-color: rgb(150, 150, 250);
+}
+
+/* rörelse när kroppsdel ansluter */
+
+/* @keyframes jump {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-10px); } 
+  60% { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+.moving {
+  animation: jump 0.3s ease;
+}   */
+
+
+/* Mobilanpassning */
+@media (max-width: 350px) {
+  svg.hangman {
+    max-width: 300px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}

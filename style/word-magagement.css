@@ -1,0 +1,75 @@
+.keyboard {
+  gap: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 360px;
+  margin: 1em auto;
+  justify-content: center;
+}
+
+.keyButton {
+  aspect-ratio: 1 / 1;
+  font-size: clamp(12px, 4vw, 16px);
+  border-radius: 6px;
+  min-height: 36px;
+  border: none;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.08s ease,
+    background-color 0.2s;
+}
+
+.keyButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+}
+
+.keyButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+}
+
+/* States */
+.keyButton.correct {
+  background-color: orange;
+  color: white;
+  animation: pulse 0.25s ease-in-out;
+}
+
+.keyButton.wrong {
+  background-color: lightgray;
+  color: #444;
+  animation: shake 0.25s ease-in-out;
+}
+
+.keyButton:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Responsive */
+
+@media (min-width: 600px) {
+  .keyboard {
+    max-width: 520px;
+  }
+}
+
+/* Animation */
+
+@keyframes shake {
+	0% { transform: translateX(0); }
+	25% { transform: translateX(-3px); }
+	50% { transform: translateX(3px); }
+	75% { transform: translateX(-2px); }
+	100% { transform: translateX(0); }
+  }
+
+  @keyframes pulse {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.15); }
+	100% { transform: scale(1); }
+  }

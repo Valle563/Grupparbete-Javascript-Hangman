@@ -1,0 +1,35 @@
+Loggbok för Valentino Finocchiaro (Iron pirates)
+
+
+Logg
+
+Detta har jag jobbat med varje dag:
+
+18/11 - uppstart med gruppen. Vi började med en designskiss. Jag ritade en skiss på papper och började med mobil storlek (350px), sedan gjorde jag en för dator variant(större skärmar). Vi gick igenom diskussionsfrågorna för våran grupp, jag skrev den i anteckningar och delade den i våran grupp så alla medlemmar kan få tag i den.
+
+Jag gjorde ett github repo för våran grupp och gjorde en main och en dev branch och gjorde repot synligt och delade allt med mina gruppmedlemmar. Jag skapade en html-fil och en CSS-fil och skapade en mapp till båda med namnen assets och src. 
+
+19/11 - idag har jag skapat alla js-filer (5 stycken) och döpt allt till passsnade namn som hänger ihop med vad varje js-fil gör. Vi har pratat i gruppen om hur vi ska dela upp arbetet och vem som ska göra vad så alla får göra lite av allt. Sen har vi diskuterat hur vi ska lägga upp allt för dessa kommande två veckorna så vi får mest nytta av tiden. Jag skapade också css filer till alla js filer och jag är klar med alla branches och delat allt till main och hämtat allt från dev till alla branches.
+
+20/11 - idag har jag börjat koda i min fil mest i html och js, jag har gjort massa divar till gubbens kropp.
+
+21/11 - idag har jag fortsatt att koda i min html och min js.
+
+24/11 - idag har jag gjort klart min draw hangman gubbe så hans kroppsdelar kommer upp en och en med  hjälp av javscript och det finns en reset knapp som vi ska jobba mer med. Vi är redo för att visa vad vi har gjort imorgon för test imorgon för en annan grupp!
+
+25/11 - idag har vi haft vårat användartest. Vi fick bra med feedback (+ snygg layout - lite tips om de blir svårt, lite mer motivasion.). Jag har skapat en fil för en hamburgarmeny och lagt till ett rep till min hangman gubbe. jag hade också bytt från "style.display = 'none'" till "classList". Vi har fått mycket gjort idaag tycker jag och vi har även disskuterat lite mer om våran skiss. 
+
+26/11 - idag har vi gjort klart så allt hänger ihop så spelet fungerar som det ska och jag har även gjort en player-name och en namnskylt typ så de står vem som spelar. 
+
+27/11 - Idag har jag gjort klart "nyspelare" vyn som kommer upp innan spelet startar. Jag har också fixat återställsknappen med css och tog bort "nästa kroppsdel" för allt går automatiskt.
+
+28/11 - Idag har jag fixat lite buggar i spelet, en var att gubben fick inte alla kroppsdelar när man fick fel bokstav för att 'button.classList.add("wrong")showNextPart()' låg på fel rad så de blev en bugg och en annan var att jag tagit bort återställsknappen för den skapade lite problem när man skulle återställa så jag tog bort själva knappen men jag behöll id och fixade om lite.
+
+
+Utvärdering och reflektion
+
+
+Skriv vad du har lärt dig av att arbeta i gruppen.
+
+Sammanfatta hur du tycker att arbetet i gruppen har fungerat.
+

@@ -1,0 +1,59 @@
+Projektrapport för Iron piraters
+
+Vi är: Iron pirates
+Överenskommelse:
+
+Diskussionsfrågor för överenskommelse Iron pirates
+Vilka dagar ska vi ses?
+vi ska träffas måndag till fredag och vara lediga på lördag och söndagar.
+Mellan vilka tider jobbar vi?
+9-16
+Var träffas vi? 
+Vi träffas på discord.
+Vilka kommunikationskanaler ska vi ha? 
+Vi träffas på discord.
+Vad förväntas av varje gruppmedlem gällande kommunikation?
+Vara delaktig "varje dag" förutom förhinder
+göra minst 1 push varje dag "göra fler commits"
+
+Vilka dagar ska vi ses? | Mellan vilka tider? | Var träffas vi?
+
+Vi jobbar måndag till fredag och är lediga lördag+söndag. Tisdagar är vi i skolan, andra dagar hemifrån. Måndag till fredag börjar vi med gemensamt uppstart vad vi ska göra under dagen. Meddela i tid om man har förhinder, helst dagen innan. Vi är inloggade på Discord i vår kanal grennen mellan 9-16.
+
+Vilka kommunikationskanaler? | Vad förväntas av varje gruppmedlem?
+
+Vi använder Discord för all kommunikation. Mellan 9-15 på dagar som vi arbetar ska man svara på direktmeddelanden och meddelanden i gruppens chat-kanal. Utanför arbetstid förväntas man svara tidigt nästa arbetsdag.
+
+Om man kör fast med ett problem förväntar vi oss att man frågar de andra i gruppen/AI. Vi hjälper varandra och parprogrammerar för att lösa problem snabbare och bättre.
+
+
+
+Uppdelning av arbetet:
+Vi delar upp det så att Valentino jobbar i draw-hangman.js och Henrik jobbar i show-guessed-letters.js och antonina jobbar i word-magagement.js och game-over.js och score.screen.Html kör vi tillsammans och css kör man till den som man jobbar i med js filen. js jobbar vi med tillsammans. Behöver man hjälper så kan vi sitta tillsammans. 
+
+Användartester
+Användartester den 2025-11-25: i skolan.
+
+*feedback 2 stars = Bra struktur och spelet ser bra ut.   
+
+*feedback 1 wish = Mer possitiva kommentarer och kan vara mer gissningar. 
+
+
+Code reviews
+Code review den 2025-11-26: smågrupper.
+
+*feedback 2 stars =  Bra struktur i koden 'lätt att se vad som är vad'.
+
+*feedback 1 wish = Komentera koden och vad du gör mer.
+
+
+Code reviews
+Code review den 2025-11-27: smågrupper.
+
+*feedback 2 stars = Tydlig kod och lätt att förstå men även lätt läst.
+
+*feedback 1 wish = för små knappar? kan bli svårt på mobil, små skärmar.
+
+
+
+
