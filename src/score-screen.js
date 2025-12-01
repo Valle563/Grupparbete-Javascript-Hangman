@@ -72,9 +72,3 @@ export function updateMenuWord() {
 		wordDisplayMenu.textContent = gameWord.textContent
 	}
 }
-
-// // reset function when restarting game (?)
-// export function resetScoreMenu() {
-// 	if (scoreDisplayMenu) scoreDisplayMenu.textContent = ''
-// 	if (wordDisplay) wordDisplay.textContent = ''
-// }
