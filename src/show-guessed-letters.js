@@ -12,21 +12,12 @@ export function setSecretWord(word) {
     secretWord = word
 }
 
+// Skapar antal streck ( _ _ _ ) beronde på hur långt ordet är
 export function createLines () {
     document.querySelector('.guessed-letter').textContent = secretWord
     .split('')
     .map(() => '_')
     .join(' ');
 }
-
-
-// function newSecretWord(){
-//     secretWord = words[Math.floor(Math.random() * words.length)].toUpperCase()
-// }
-
-// newSecretWord();
-
-
-
 createLines();
 resetMan();

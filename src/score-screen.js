@@ -4,21 +4,39 @@ const scoreDisplayMenu = document.querySelector('.score-display')
 const wordDisplayMenu = document.querySelector('.word-display')
 const playerNameScoreEl = document.querySelector('.player-name-scoremenu')
 const scoreListEl = document.querySelector('.score-list') // create a container in HTML - tbody
-let sortDateAscending = false; // sorting - start with descending
 
+// Sorting state
+let sortDateAscending = false; // sorting - start with descending (latest game first)
+let sortFelAscending = false; // sorting - start with descending (largest errors first)
+let sortColumn = 'date' // sorted by default
 
+// Reference to datum and fel headers
 const sortDateHeader = document.querySelector('#sort-date')
+const sortFelHeader = document.querySelector('#sort-fel')
 
+// // Event listeners for sorting
 if (sortDateHeader) {
     sortDateHeader.addEventListener('click', () => {
+        sortColumn = 'date'
         sortDateAscending = !sortDateAscending
         updateScoreMenu()
         updateSortArrow()
     })
 }
-
-// set initial arrow
+if (sortFelHeader) {
+    sortFelHeader.addEventListener('click', () => {
+        sortColumn = 'fel'
+        sortFelAscending = !sortFelAscending
+        updateScoreMenu()
+        updateFelArrow()
+    })
+}
+// Set initial arrows
 updateSortArrow()
+updateFelArrow()
+
+
+
 
 function updateSortArrow() {
     if (!sortDateHeader) return
@@ -26,24 +44,41 @@ function updateSortArrow() {
 }
 
 
+function updateFelArrow() {
+    if (!sortFelHeader) return
+    sortFelHeader.textContent = sortFelAscending ? 'Fel ▲' : 'Fel ▼'
+}
+
 
 
 // Function to refresh the score menu
 export function updateScoreMenu() {
     const games = JSON.parse(localStorage.getItem('hangmanGames') || '[]')
     scoreListEl.innerHTML = ''
-	
-// Sort by date - toggle asc/desc
+
+// If Fel header clicked - sort by wrong guesses
+// Else - sort by date
 // games.sort((a, b) => {
-//     const dateA = new Date(a.date)
-//     const dateB = new Date(b.date)
-//     return sortDateAscending ? dateA - dateB : dateB - dateA
+//     if (sortFelHeaderClicked) { 
+//         return sortFelAscending ? a.wrongGuesses - b.wrongGuesses : b.wrongGuesses - a.wrongGuesses
+//     } else {
+//         const dateA = new Date(a.date).getTime()
+//         const dateB = new Date(b.date).getTime()
+//         return sortDateAscending ? dateA - dateB : dateB - dateA
+//     }
 // })
+
 games.sort((a, b) => {
-    const dateA = new Date(a.date).getTime()
-    const dateB = new Date(b.date).getTime()
-    return sortDateAscending ? dateA - dateB : dateB - dateA
+    if (sortColumn === 'fel') {
+        return sortFelAscending ? a.wrongGuesses - b.wrongGuesses : b.wrongGuesses - a.wrongGuesses
+    } else { // date
+        const dateA = new Date(a.date).getTime()
+        const dateB = new Date(b.date).getTime()
+        return sortDateAscending ? dateA - dateB : dateB - dateA
+    }
 })
+
+
 
 
 
@@ -53,9 +88,9 @@ games.sort((a, b) => {
 		// Format date
 		const date = new Date(game.date);
 		const formattedDate = `${String(date.getDate()).padStart(2,'0')}/` +
-                      `${String(date.getMonth() + 1).padStart(2,'0')} ` +
-                      `${String(date.getHours()).padStart(2,'0')}:` +
-                      `${String(date.getMinutes()).padStart(2,'0')}`;
+                    `${String(date.getMonth() + 1).padStart(2,'0')} ` +
+                    `${String(date.getHours()).padStart(2,'0')}:` +
+                    `${String(date.getMinutes()).padStart(2,'0')}`;
 
 // senaste spel
         tr.innerHTML = `
@@ -67,7 +102,7 @@ games.sort((a, b) => {
             <td class="result ${game.won ? 'win' : 'loss'}"
     		aria-label="${game.won ? 'Vann spelet' : 'Förlorade spelet'}"
     		title="${game.won ? 'Vann' : 'Förlorade'}">
-  ${game.won ? '✅' : '❌'}
+	${game.won ? '✅' : '❌'}
 </td>
         `
         scoreListEl.appendChild(tr)

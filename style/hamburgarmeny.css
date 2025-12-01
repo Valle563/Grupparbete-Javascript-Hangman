@@ -1,5 +1,4 @@
-
-  .hamburger {
+.hamburger {
 	border: none;
 	background: linear-gradient(135deg, #a8d8ff);
 	cursor: pointer;
@@ -106,9 +105,9 @@
 .score-table td:nth-child(3),
 .score-table td:nth-child(4),
 .score-table td:nth-child(6) {
- text-align: center;
+  text-align: center;
  /* min-width: 2rem; */
- width: auto;
+  width: auto;
 }
 
 /* Date column - slightly smaller font */
@@ -129,7 +128,7 @@
 
 	.score-table th:nth-child(5),
 	.score-table td:nth-child(5) {
-	  display: none;
+	display: none;
 	}
   } */
 
@@ -137,10 +136,10 @@
 	/* Hide certain columns */
 	.score-table th:nth-child(3),
 	.score-table td:nth-child(3) {
-	  display: none;
+	display: none;
 	}
 	.score-table th:nth-child(4),
 	.score-table td:nth-child(4) {
-	  display: none;
+	display: none;
 	}
   }
