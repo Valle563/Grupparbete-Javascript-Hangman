@@ -13,26 +13,7 @@ const keyboardContainer = document.querySelector(".keyboard")
 let currentSecretWord = getSecretWord()
 
 
-/* Player modal handling moved to `src/new-player.js` */
 
-// function handleGuess(letter, button) {
-// 	const display = document.querySelector('.guessed-letter')
-// 	const current = display.textContent.split(' ')
-
-// 	if (currentSecretWord.includes(letter)) {
-// 		button.classList.add("correct")
-// 		correct++
-// 		} else {
-// 		button.classList.add("wrong"), showNextPart()
-// 		wrong++
-// 		}
-// 	button.disabled = true
-
-// 	display.textContent = currentSecretWord
-// 	.split('')
-// 	.map((l, i) => (l === letter ? l : current[i]))
-// 	.join(' ')
-// }
 
 export function restartGame() {
 

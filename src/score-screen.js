@@ -4,16 +4,48 @@ const scoreDisplayMenu = document.querySelector('.score-display')
 const wordDisplayMenu = document.querySelector('.word-display')
 const playerNameScoreEl = document.querySelector('.player-name-scoremenu')
 const scoreListEl = document.querySelector('.score-list') // create a container in HTML - tbody
+let sortDateAscending = false; // sorting - start with descending
+
+
+const sortDateHeader = document.querySelector('#sort-date')
+
+if (sortDateHeader) {
+    sortDateHeader.addEventListener('click', () => {
+        sortDateAscending = !sortDateAscending
+        updateScoreMenu()
+        updateSortArrow()
+    })
+}
+
+// set initial arrow
+updateSortArrow()
+
+function updateSortArrow() {
+    if (!sortDateHeader) return
+    sortDateHeader.textContent = sortDateAscending ? 'Datum ▲' : 'Datum ▼'
+}
+
+
+
 
 // Function to refresh the score menu
 export function updateScoreMenu() {
     const games = JSON.parse(localStorage.getItem('hangmanGames') || '[]')
     scoreListEl.innerHTML = ''
-
-	// Default sorting by date descending (latest games first)
+	
+// Sort by date - toggle asc/desc
+// games.sort((a, b) => {
+//     const dateA = new Date(a.date)
+//     const dateB = new Date(b.date)
+//     return sortDateAscending ? dateA - dateB : dateB - dateA
+// })
 games.sort((a, b) => {
-    return new Date(b.date) - new Date(a.date)
+    const dateA = new Date(a.date).getTime()
+    const dateB = new Date(b.date).getTime()
+    return sortDateAscending ? dateA - dateB : dateB - dateA
 })
+
+
 
 	games.forEach(game => {
 		const tr = document.createElement('tr')
@@ -21,8 +53,7 @@ games.sort((a, b) => {
 		// Format date
 		const date = new Date(game.date);
 		const formattedDate = `${String(date.getDate()).padStart(2,'0')}/` +
-                      `${String(date.getMonth() + 1).padStart(2,'0')}/` +
-                      `${String(date.getFullYear()).slice(-2)} ` +
+                      `${String(date.getMonth() + 1).padStart(2,'0')} ` +
                       `${String(date.getHours()).padStart(2,'0')}:` +
                       `${String(date.getMinutes()).padStart(2,'0')}`;
 
@@ -50,6 +81,7 @@ if (hamburger && scoreMenu) {
 		// When menu opens, we refresh word display from main screen
 		updateMenuWord()
 		updateScoreMenu()
+		updateSortArrow()
 
 		// Get the player name from local storage (Update player name in score menu every time menu is shown)
 
